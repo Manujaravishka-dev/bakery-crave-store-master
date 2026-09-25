@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Bento from '../components/Bento.astro';
+import MenuPreview from '../components/MenuPreview';
+import Reviews from '../components/Reviews';
+---
+
+<Layout>
+	<Hero />
+	<Bento />
+	<MenuPreview client:load />
+	<Reviews client:load />
+</Layout>

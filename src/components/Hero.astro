@@ -1,0 +1,380 @@
+<section id="hero" class="crave-hero relative min-h-screen w-full overflow-hidden flex items-center justify-center bg-crave-pastel">
+	<!-- Background giant typography -->
+	<div class="hero-bg-word" aria-hidden="true">CRAVE</div>
+
+	<!-- Floating decorative 3D shapes -->
+	<div class="floating-shape shape-one" aria-hidden="true"></div>
+	<div class="floating-shape shape-two" aria-hidden="true"></div>
+	<div class="floating-shape shape-three" aria-hidden="true"></div>
+
+	<!-- Main content -->
+	<div class="crave-hero-content relative z-10 w-[90%] max-w-[850px] text-center flex flex-col items-center">
+		<!-- Badge -->
+		<div class="hero-badge flex items-center gap-2 mb-5 text-[10px] font-bold tracking-[0.16em]">
+			<span class="w-[7px] h-[7px] rounded-full bg-crave-rosa"></span>
+			FRESHLY BAKED • MADE WITH LOVE
+		</div>
+
+		<!-- Title -->
+		<h1 class="hero-title font-playfair text-[clamp(48px,7vw,100px)] leading-[0.94] font-medium tracking-[-0.055em]">
+			Making sure you really{" "}
+			<span class="italic relative text-crave-rosa">
+				crave
+				<span class="absolute left-[8%] right-[3%] -bottom-1 h-[7px] rounded-full bg-crave-rosa opacity-35 -rotate-2" aria-hidden="true"></span>
+			</span>{" "}
+			it!
+		</h1>
+
+		<!-- Description -->
+		<p class="hero-description max-w-[590px] mt-7 mb-8 text-[clamp(13px,1.4vw,17px)] leading-[1.7] tracking-[0.05em] text-crave-night/70">
+			CLASSIC WITH A MODERN TWIST.
+			<br />
+			AN EXPERIENCE FOR THE TASTE BUDS AND THE SOUL.
+		</p>
+
+		<!-- CTA buttons -->
+		<div class="hero-buttons flex flex-col sm:flex-row gap-3.5 w-full sm:w-auto items-stretch sm:items-center sm:justify-center">
+			<a
+				href="/menu"
+				class="hero-btn min-w-[180px] px-5 py-3.5 rounded-full bg-crave-rosa text-crave-night flex items-center justify-between gap-5 text-[13px] font-semibold shadow-xl shadow-crave-night/10"
+			>
+				<span>Check our Menu</span>
+				<span class="w-7 h-7 rounded-full bg-crave-pastel/25 flex items-center justify-center" aria-hidden="true">→</span>
+			</a>
+			<a
+				href="/contact"
+				class="hero-btn min-w-[180px] px-5 py-3.5 rounded-full bg-crave-night text-crave-pastel flex items-center justify-between gap-5 text-[13px] font-semibold shadow-xl shadow-crave-night/10"
+			>
+				<span>Contact Us</span>
+				<span class="w-7 h-7 rounded-full bg-crave-pastel/20 flex items-center justify-center" aria-hidden="true">→</span>
+			</a>
+		</div>
+	</div>
+
+	<!-- 3D product card (wrapper moves on scroll, inner floats) -->
+	<div class="hero-product-card absolute right-[5%] top-[19%] z-[8] will-change-transform">
+		<div class="hero-card-inner w-[250px] h-[330px] p-[17px] rounded-[30px] bg-crave-pastel/35 backdrop-blur-[18px] border border-crave-night/10 shadow-[15px_20px_40px_rgba(0,0,0,0.08),inset_3px_3px_8px_rgba(255,255,255,0.8),inset_-3px_-3px_8px_rgba(0,0,0,0.04)] rotate-[4deg]">
+			<!-- Card header -->
+			<div class="flex justify-between text-[9px] font-bold tracking-[0.14em] opacity-65">
+				<span>THE CRAVE</span>
+				<span class="w-[7px] h-[7px] rounded-full bg-crave-rosa shadow-[0_0_0_5px_rgba(0,0,0,0.025)]" aria-hidden="true"></span>
+			</div>
+
+			<!-- Cake visual stack -->
+			<div class="cake-visual relative h-[210px] flex items-center justify-center">
+				<div class="cake-shadow absolute bottom-7 w-[145px] h-7 rounded-full bg-crave-night/15 blur-xl" aria-hidden="true"></div>
+
+				<div class="cake relative w-[145px] h-[115px] -rotate-1 drop-shadow-[12px_15px_12px_rgba(0,0,0,0.13)]">
+					<div class="cake-layer layer-bottom absolute left-0 bottom-0 w-full h-12 rounded-[18px_18px_12px_12px] bg-crave-night shadow-[inset_8px_5px_10px_rgba(255,255,255,0.08)]"></div>
+					<div class="cake-layer layer-middle absolute left-0 bottom-9 w-full h-[43px] rounded-[18px_18px_12px_12px] bg-crave-rosa shadow-[inset_8px_5px_10px_rgba(255,255,255,0.25)]"></div>
+					<div class="cake-layer layer-top absolute left-0 bottom-[69px] w-full h-10 rounded-[18px_18px_12px_12px] bg-crave-pastel shadow-[inset_8px_5px_10px_rgba(255,255,255,0.7)]"></div>
+
+					<!-- Cream elements -->
+					<div class="absolute left-[22px] top-[9px] w-[35px] h-5 rounded-full bg-crave-pastel shadow-[3px_5px_8px_rgba(0,0,0,0.08)] z-[5]" aria-hidden="true"></div>
+					<div class="absolute right-[23px] top-2 w-[35px] h-5 rounded-full bg-crave-pastel shadow-[3px_5px_8px_rgba(0,0,0,0.08)] z-[5]" aria-hidden="true"></div>
+
+					<!-- Cherries -->
+					<div class="absolute left-[62px] top-0 w-[13px] h-[13px] rounded-full bg-crave-rosa z-[7] shadow-[3px_4px_6px_rgba(0,0,0,0.15)]" aria-hidden="true"></div>
+					<div class="absolute left-[91px] top-4 w-[13px] h-[13px] rounded-full bg-crave-rosa z-[7] shadow-[3px_4px_6px_rgba(0,0,0,0.15)]" aria-hidden="true"></div>
+					<div class="absolute left-[39px] top-[21px] w-[13px] h-[13px] rounded-full bg-crave-rosa z-[7] shadow-[3px_4px_6px_rgba(0,0,0,0.15)]" aria-hidden="true"></div>
+				</div>
+			</div>
+
+			<!-- Card footer -->
+			<div class="flex justify-between items-end">
+				<div>
+					<small class="block text-[8px] tracking-[0.14em] opacity-50 mb-1">BAKED FRESH</small>
+					<strong class="text-[13px] font-semibold">Every single day.</strong>
+				</div>
+				<div class="w-[30px] h-[30px] rounded-full bg-crave-night text-crave-pastel flex items-center justify-center text-lg" aria-hidden="true">+</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bottom info ticker -->
+	<div class="hero-bottom absolute bottom-0 left-0 w-full px-[5%] py-5 flex justify-between text-[9px] font-semibold tracking-[0.12em] border-t border-crave-night/5">
+		<span>• HANDCRAFTED</span>
+		<span>• PREMIUM INGREDIENTS</span>
+		<span>• SCROLL DOWN ↓</span>
+	</div>
+</section>
+
+<style>
+	.crave-hero {
+		isolation: isolate;
+	}
+
+	.hero-bg-word {
+		position: absolute;
+		left: 50%;
+		bottom: 3%;
+		transform: translateX(-50%);
+		font-size: clamp(160px, 27vw, 430px);
+		font-weight: 900;
+		line-height: 0.7;
+		color: var(--color-crave-rosa);
+		opacity: 0.18;
+		letter-spacing: -0.08em;
+		white-space: nowrap;
+		z-index: -2;
+		pointer-events: none;
+		will-change: transform;
+	}
+
+	.floating-shape {
+		position: absolute;
+		border-radius: 50%;
+		pointer-events: none;
+		z-index: 2;
+		will-change: transform;
+	}
+
+	.shape-one {
+		width: 100px;
+		height: 100px;
+		left: 8%;
+		top: 24%;
+		background: var(--color-crave-rosa);
+		opacity: 0.45;
+		box-shadow: inset 15px 15px 25px rgba(255, 255, 255, 0.4), 15px 20px 30px rgba(0, 0, 0, 0.08);
+	}
+
+	.shape-two {
+		width: 45px;
+		height: 45px;
+		left: 18%;
+		bottom: 20%;
+		background: var(--color-crave-night);
+		opacity: 0.9;
+		box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.1), 8px 12px 20px rgba(0, 0, 0, 0.12);
+	}
+
+	.shape-three {
+		width: 70px;
+		height: 70px;
+		right: 27%;
+		bottom: 17%;
+		background: var(--color-crave-rosa);
+		opacity: 0.35;
+		box-shadow: inset 10px 10px 20px rgba(255, 255, 255, 0.4), 10px 15px 25px rgba(0, 0, 0, 0.07);
+	}
+
+	@media (max-width: 900px) {
+		.hero-product-card {
+			right: 3%;
+			top: 16%;
+		}
+
+		.hero-card-inner {
+			width: 210px;
+			height: 285px;
+		}
+
+		.cake-visual {
+			height: 175px;
+		}
+	}
+
+	@media (max-width: 700px) {
+		.hero-product-card {
+			display: none;
+		}
+
+		.hero-bg-word {
+			font-size: 40vw;
+			bottom: 15%;
+		}
+
+		.shape-one {
+			width: 55px;
+			height: 55px;
+			left: 5%;
+			top: 18%;
+		}
+
+		.shape-two {
+			width: 30px;
+			height: 30px;
+			left: 8%;
+			bottom: 25%;
+		}
+
+		.shape-three {
+			width: 45px;
+			height: 45px;
+			right: 8%;
+			bottom: 25%;
+		}
+
+		.hero-bottom {
+			padding: 15px 20px;
+			font-size: 7px;
+		}
+
+		.hero-bottom span:nth-child(2) {
+			display: none;
+		}
+	}
+</style>
+
+<script>
+	import gsap from "gsap";
+	import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	const hero = document.getElementById("hero");
+
+	if (hero && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+		const ctx = gsap.context(() => {
+			const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+			tl.fromTo(
+				".hero-badge",
+				{ y: -25, opacity: 0 },
+				{ y: 0, opacity: 0.85, duration: 0.7 }
+			)
+				.from(
+					".hero-title",
+					{
+						opacity: 0,
+						filter: "blur(8px)",
+						scale: 0.98,
+						duration: 1.1,
+					},
+					"-=0.35"
+				)
+				.from(
+					".hero-description",
+					{
+						y: 25,
+						opacity: 0,
+						duration: 0.8,
+					},
+					"-=0.65"
+				)
+				.from(
+					".hero-buttons",
+					{
+						y: 25,
+						opacity: 0,
+						scale: 0.95,
+						duration: 0.8,
+					},
+					"-=0.5"
+				)
+				.from(
+					".hero-card-inner",
+					{
+						x: 100,
+						y: 80,
+						opacity: 0,
+						rotation: 15,
+						scale: 0.8,
+						duration: 1.2,
+						ease: "back.out(1.4)",
+					},
+					"-=0.8"
+				)
+				.fromTo(
+					".hero-bottom span",
+					{ y: 15, opacity: 0 },
+					{ y: 0, opacity: 0.55, stagger: 0.12, duration: 0.5 },
+					"-=0.5"
+				)
+				.to(".hero-card-inner", {
+					y: -14,
+					rotation: 2,
+					duration: 2.8,
+					repeat: -1,
+					yoyo: true,
+					ease: "sine.inOut",
+				});
+
+			gsap.to(".shape-one", {
+				y: -22,
+				x: 12,
+				rotation: 20,
+				duration: 4,
+				repeat: -1,
+				yoyo: true,
+				ease: "sine.inOut",
+			});
+
+			gsap.to(".shape-two", {
+				y: 18,
+				x: -10,
+				rotation: -25,
+				duration: 3,
+				repeat: -1,
+				yoyo: true,
+				ease: "sine.inOut",
+			});
+
+			gsap.to(".shape-three", {
+				y: -15,
+				x: -15,
+				rotation: 15,
+				duration: 3.6,
+				repeat: -1,
+				yoyo: true,
+				ease: "sine.inOut",
+			});
+
+			gsap.to(".hero-bg-word", {
+				y: -180,
+				scale: 1.08,
+				ease: "none",
+				scrollTrigger: {
+					trigger: "#hero",
+					start: "top top",
+					end: "bottom top",
+					scrub: 1,
+				},
+			});
+
+			gsap.to(".hero-product-card", {
+				y: -100,
+				rotation: -4,
+				ease: "none",
+				scrollTrigger: {
+					trigger: "#hero",
+					start: "top top",
+					end: "bottom top",
+					scrub: 1,
+				},
+			});
+
+			gsap.fromTo(
+				".hero-title",
+				{ y: 0 },
+				{
+					y: -50,
+					ease: "none",
+					scrollTrigger: {
+						trigger: "#hero",
+						start: "top top",
+						end: "bottom top",
+						scrub: 1.2,
+					},
+				}
+			);
+
+			document.querySelectorAll(".hero-btn").forEach((button) => {
+				const press = () => {
+					gsap.to(button, { scale: 0.95, duration: 0.12 });
+				};
+
+				const release = () => {
+					gsap.to(button, { scale: 1, duration: 0.35, ease: "back.out(2)" });
+				};
+
+				button.addEventListener("mousedown", press);
+				button.addEventListener("mouseup", release);
+				button.addEventListener("mouseleave", release);
+			});
+		}, hero);
+
+		window.addEventListener("astro:before-swap", () => ctx.revert());
+	}
+</script>

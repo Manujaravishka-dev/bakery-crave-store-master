@@ -1,0 +1,47 @@
+---
+import "../styles/global.css";
+import "@fontsource-variable/playfair-display";
+import "@fontsource-variable/dm-sans";
+
+import { ClientRouter } from "astro:transitions";
+import Footer from "../components/Footer.astro";
+import { Header } from "../components/Header";
+import CartDrawer from "../components/CartDrawer";
+
+const { title = "Crave Bakery - Making sure you really crave it!" } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{title}</title>
+
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta
+			property="og:description"
+			content="Crave Bakery is a patisserie crafting classic treats with a modern twist, using only the finest ingredients. Explore the menu and get in touch for custom cakes and orders."
+		/>
+		<meta
+			name="description"
+			content="Crave Bakery is a patisserie crafting classic treats with a modern twist, using only the finest ingredients. Explore the menu and get in touch for custom cakes and orders."
+		>
+		<meta name="keywords" content="Crave Bakery, patisserie, bakery, finest ingredients">
+		<meta name="author" content="Crave Bakery">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<ClientRouter />
+	</head>
+	<body>
+		<Header client:load currentPath={currentPath} />
+		<main class="w-full flex flex-col justify-center items-center">
+			<slot />
+		</main>
+		<Footer />
+		<CartDrawer client:load />
+	</body>
+</html>

@@ -1,0 +1,23 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MenuGrid from "../../components/MenuGrid";
+---
+
+<Layout title="Menu | Twinkle Bakes">
+	<section class="w-full bg-crave-pastel">
+		<div class="max-w-6xl mx-auto w-full px-4 sm:px-6 pt-32 md:pt-40 pb-10 md:pb-12 text-center">
+			<p class="inline-flex items-center gap-2 justify-center text-[11px] font-bold tracking-[0.2em] text-crave-night/70">
+				<span class="w-[7px] h-[7px] rounded-full bg-crave-rosa" aria-hidden="true"></span>
+				OUR MENU
+			</p>
+			<h1 class="font-playfair text-[clamp(38px,5vw,68px)] leading-[1.05] font-medium tracking-[-0.03em] mt-5 text-crave-night">
+				Freshly baked,<br />
+				<span class="italic text-crave-rosa">just for you.</span>
+			</h1>
+		</div>
+
+		<div class="max-w-6xl mx-auto w-full px-4 sm:px-6 pb-16 md:pb-24">
+			<MenuGrid client:load />
+		</div>
+	</section>
+</Layout>
